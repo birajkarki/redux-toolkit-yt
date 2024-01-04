@@ -2,7 +2,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  employees: [],
+  employees: [], // Make sure it's employees instead of companies
 };
 
 const employeeSlice = createSlice({
@@ -16,5 +16,4 @@ const employeeSlice = createSlice({
 });
 
 export const { addEmployee } = employeeSlice.actions;
-
 export default employeeSlice.reducer;
